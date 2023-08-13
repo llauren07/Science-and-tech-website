@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0d47a1, #00acc1); 
+  padding: 1rem;
+  color: #fff;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu a:hover {
+  background-color: #00FFFF;
+  color: #0d47a1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu a:not(.active):hover {
+  color: #0d47a1; 
+  text-decoration: none; 
+}
+
+.menu a.active {
+  background-color: transparent;
+  color: #fff; 
+  position: relative; 
+}
+
+.menu a.active::before {
+  content: ""; 
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 100%; 
+  height: 2px; 
+  background-color: #00FFFF; 
+}
+
+.content {
+  padding: 2rem;
+}
+
+.cours-section {
+  margin-bottom: 2rem;
+  background-color: #e1f5fe; 
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cours-section h2 {
+  color: #0d47a1; 
+  margin-bottom: 1rem;
+}
+
+.cours-section p {
+  color: #333;
+}
+
+.hero-section {
+  text-align: center;
+  background: linear-gradient(to right, #0d47a1, #00acc1); 
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  background-color: #00FFFF; 
+  color: #0d47a1; 
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: #0d47a1; 
+  color: #00FFFF; 
+}
+
+.footer {
+  background: linear-gradient(to right, #0d47a1, #00acc1); 
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h3 {
+  color: #00FFFF;
+}
+
+.menu ul ul {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.menu li:hover ul {
+  display: block; 
+}
+
+.menu ul ul li {
+  margin-left: 0; 
+  width: 200px; 
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu ul ul li {
+  margin-left: 0;
+  width: 200px;
+}
+
+.menu ul ul a {
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  transition: none;
+}
+
+.menu ul ul a:hover {
+  background-color: #ddd; 
+  text-decoration: none;
+}
+.cta-button-etoiles {
+  background-color: #0d47a1; 
+  color: #fff;
+}
+
+.cta-button-quantique {
+  background-color: #00acc1; 
+  color: #fff;
+}
+
+.cta-button-ia {
+  background-color: #26a69a; 
+  color: #fff;
+}
+
+#accroche {
+  color: #0d47a1;
+}
+.chapitre-tabs {
+  display: flex;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.chapitre-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chapitre-tab label {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.chapitre-tab input[type="radio"] {
+  display: none;
+}
+
+.chapitre-tab input[type="radio"]:checked + label {
+  background-color: #00FFFF;
+  color: #0d47a1;
+}
+
+/* Styles pour le contenu des chapitres */
+.chapitre-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chapitre-tab input[type="radio"]:checked ~ .chapitre-content {
+  display: block;
+}
+.classe-menu {
+  background-color: #0d47a1; 
+  color: #fff; 
+  padding: 10px 0; 
+}
+
+.classe-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.classe-menu li {
+  margin: 0 20px; 
+}
+
+.classe-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.classe-link:hover {
+  color: #00FFFF; 
+}
+/* Stylisation générale */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Stylisation des vidéos */
+section.videos-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.video {
+  flex: 0 0 calc(33.33% - 20px); 
+}
+/* Style pour les exercices */
+.exercices {
+  margin-top: 30px;
+
+}
+.exercice li{
+  list-style-type: none;
+
+}
+
+.exercice {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.exercice-content {
+  margin-bottom: 15px;
+}
+
+.correction {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #e0e0e0;
+  display: none;
+}
+
+.exercice details[open] .correction {
+  display: block;
+}

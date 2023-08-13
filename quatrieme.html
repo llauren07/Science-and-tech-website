@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Science&Tech - Cours de 4ème</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="favicon.ico" alt="Logo">
+            <h1>Science&Tech</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="accueil.html" >Accueil</a></li>
+                <li><a href="maths.html" class="active">Maths</a>
+                   </li>
+                    
+                <li><a href="physique.html">Physique</a></li>
+                <li><a href="info.html">Informatique</a>
+                    
+                        </li>
+                <li><a href="elec.html">Electronique</a>
+                    
+                    </li>
+
+                
+            </ul>
+        </nav>
+        
+    </header>
+
+    <nav class="classe-menu">
+        <ul>
+            <li><a href="quatrieme.html"  class="active"class="classe-link">4ème</a></li>
+            <li><a href="troisieme.html" class="classe-link">3ème</a></li>
+            <li><a href="seconde.html" class="classe-link">Seconde</a></li>
+            <li><a href="premiere.html" class="classe-link">Pemière</a></li>
+            <li><a href="terminale.html" class="classe-link">Terminale</a></li>
+            <li><a href="#"class="classe-link">Concours</a></li>
+            <li><a href="#"class="classe-link" >Pour aller plus loin</a></li>
+
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="chapitre">
+            <details class="cours">
+                <summary>Divisibilité et nombres Premiers</summary>
+                <section class="videos-section">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/al9oHwrlTNo" frameborder="0" allowfullscreen title="Le résumé du cours vidéo de Yvan Monka"></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ib7SFTws0c" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfEhVMmJW2I" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BlGaIqNz_pk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                
+                <section class="exercices-section">
+                    <div class="exercice">
+                        <details class="exos">
+                            <summary>Exercices de Décomposition en produits de facteurs premiers</summary>
+                            <div class="exercice-content">
+                                <p>Exercice 1 :</p>
+                                <p>Décomposez les nombres suivants en produits de facteurs premiers :</p>
+                                <ul>
+                                    <li>$$84$$</li>
+                                    <li>$$120$$</li>
+                                    <li>$$210$$</li>
+                                </ul>
+                            </div>
+                            <details class="correction">
+                                <summary>Correction</summary>
+                                <ul>
+                                    <li>$$84 = 2^2 \times 3 \times 7$$</li>
+                                    <li>$$120 = 2^3 \times 3 \times 5$$</li>
+                                    <li>$$210 = 2 \times 3 \times 5 \times 7$$</li>
+                                </ul>
+                            </details>                            </div>
+                        </details>
+                    </div>
+                    
+                    <div class="exercice">
+                        <details class="exos">
+                            <summary>Exercices de Simplification de fractions</summary>
+                            <div class="exercice-content">
+                                <p>Exercice 1 :</p>
+                                <p>Simplifiez les fractions suivantes :</p>
+                                <ul>
+                                    <li>$$\frac{12}{18}$$</li>
+                                    <li>$$\frac{15}{25}$$</li>
+                                    <li>$$\frac{24}{36}$$</li>
+                                </ul>
+                    
+                                <p>Exercice 2 :</p>
+                                <p>Simplifiez les fractions suivantes :</p>
+                                <ul>
+                                    <li>$$\frac{28}{42}$$</li>
+                                    <li>$$\frac{45}{75}$$</li>
+                                    <li>$$\frac{60}{90}$$</li>
+                                </ul>
+                            </div>
+                        </details>        
+                        <details class="correction">
+                            <summary>Correction</summary>
+                            <ul>
+                                <li>$$\frac{12}{18} = \frac{2}{3}$$</li>
+                                <li>$$\frac{15}{25} = \frac{3}{5}$$</li>
+                                <li>$$\frac{24}{36} = \frac{2}{3}$$</li>
+                            </ul>
+                        </details>                    </div>
+                        </details>
+                    </div>
+                </section>
+            </details>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Votre pied de page ici -->
+    </footer>
+</body>
+</html>
+<script>
+    const videoFrames = document.querySelectorAll('.video iframe');
+
+    videoFrames.forEach(frame => {
+        const title = frame.getAttribute('data-title');
+        const titleDiv = frame.nextElementSibling;
+
+        frame.addEventListener('mouseover', () => {
+            titleDiv.textContent = title;
+            titleDiv.style.display = 'block';
+        });
+
+        frame.addEventListener('mouseout', () => {
+            titleDiv.textContent = '';
+            titleDiv.style.display = 'none';
+        });
+    });
+    const coursDetails = document.querySelector('.cours');
+    const videosSection = coursDetails.querySelector('.videos-section');
+    const exercicesSection = coursDetails.querySelector('.exercices-section');
+
+    coursDetails.addEventListener('toggle', () => {
+        if (coursDetails.open) {
+            videosSection.style.display = 'block';
+            exercicesSection.style.display = 'block';
+        } else {
+            videosSection.style.display = 'none';
+            exercicesSection.style.display = 'none';
+        }
+    });
+</script>
+
+</script>
