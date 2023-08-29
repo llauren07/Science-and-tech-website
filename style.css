@@ -12,6 +12,7 @@ body {
   background: linear-gradient(to right, #0d47a1, #00acc1); 
   padding: 1rem;
   color: #fff;
+  margin-bottom: 40px;
 }
 
 .logo img {
@@ -73,9 +74,7 @@ body {
   background-color: #00FFFF; 
 }
 
-.content {
-  padding: 2rem;
-}
+
 
 .cours-section {
   margin-bottom: 2rem;
@@ -126,17 +125,45 @@ body {
   color: #00FFFF; 
 }
 
+
+
+/* Styles pour le footer */
 .footer {
-  background: linear-gradient(to right, #0d47a1, #00acc1); 
+  background-color: #333;
   color: #fff;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  background: linear-gradient(to right, #0d47a1, #00acc1)0 0/100% 100%; ; 
+  position:relative;
+  margin-top: 30px;
 }
 
-.footer h3 {
-  color: #00FFFF;
+/* Styles pour les icônes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
+
+.social-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 
 .menu ul ul {
   display: none; 
@@ -164,8 +191,6 @@ body {
   top: 100%;
   left: 0;
   background-color: #f4f4f4;
-  border: 1px solid #ccc; 
-  border-radius: 4px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -183,61 +208,9 @@ body {
   padding: 8px 12px;
   color: #333;
   text-decoration: none;
-  transition: none;
-}
+  
 
-.menu ul ul a:hover {
-  background-color: #ddd; 
-  text-decoration: none;
-}
-.cta-button-etoiles {
-  background-color: #0d47a1; 
-  color: #fff;
-}
 
-.cta-button-quantique {
-  background-color: #00acc1; 
-  color: #fff;
-}
-
-.cta-button-ia {
-  background-color: #26a69a; 
-  color: #fff;
-}
-
-#accroche {
-  color: #0d47a1;
-}
-.chapitre-tabs {
-  display: flex;
-  border-top: 1px solid #ddd;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-
-.chapitre-tab {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.chapitre-tab label {
-  display: block;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.chapitre-tab input[type="radio"] {
-  display: none;
-}
-
-.chapitre-tab input[type="radio"]:checked + label {
-  background-color: #00FFFF;
-  color: #0d47a1;
-}
 
 /* Styles pour le contenu des chapitres */
 .chapitre-content {
@@ -327,4 +300,76 @@ section.videos-section {
 
 .exercice details[open] .correction {
   display: block;
+}
+
+
+
+
+}
+/* Style des sections */
+.section {
+  flex-basis: 30%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  font-size: 16px;
+  color: #666;
+}
+
+/* conteneur diaporama*/
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 300px; /* Ajustez cette taille selon vos préférences */
+  height: auto;
+}
+
+.videocont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+
+}
+
+.videoA {
+  flex: 0 0 calc(33.33% - 20px); 
+  border-radius: 10px; 
+
+}
+.menu li {
+  position: relative;
+}
+.menu li:hover ul {
+  display: block;
+  position: absolute;
+  top: 41px;
+  left: 0px;
+  z-index: 100;
 }
