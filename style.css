@@ -180,19 +180,19 @@ body {
   display: block; 
 }
 
-.menu ul ul li {
-  margin-left: 0; 
-  width: 200px; 
-}
-
 .menu ul ul {
-  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #f4f4f4;
   padding: 10px;
+  border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000; 
 }
 
 .menu li:hover ul {
@@ -201,13 +201,22 @@ body {
 
 .menu ul ul li {
   margin-left: 0;
-  width: 200px;
+  width: 80%; /* Ajuste la largeur du sous-menu */
 }
 
 .menu ul ul a {
   padding: 8px 12px;
   color: #333;
   text-decoration: none;
+  background: none; 
+  border: none; 
+}
+
+.menu ul ul a:hover {
+  background-color: transparent; 
+  color: #00FFFF;
+}
+
   
 
 
@@ -305,32 +314,45 @@ section.videos-section {
 
 
 
-}
+
 /* Style des sections */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
 .section {
-  flex-basis: 30%;
-  background-color: white;
+  flex-basis: calc(90% - 20px);
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
-  transition: transform 0.2s;
-  text-align: center;
-}
-
-.section:hover {
-  transform: translateY(-5px);
 }
 
 .section-title {
   font-size: 24px;
-  color: #333;
+  color: #0d47a1;
   margin-bottom: 10px;
 }
 
 .section-content {
   font-size: 16px;
-  color: #666;
+  color: #333;
+}
+
+.videocont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.videoA {
+  flex: 0 0 calc(33.33% - 20px);
+  border-radius: 10px;
 }
 
 /* conteneur diaporama*/
@@ -348,6 +370,8 @@ section.videos-section {
 .mySlides img {
   width: 300px; /* Ajustez cette taille selon vos préférences */
   height: auto;
+  justify-content: center;
+
 }
 
 .videocont{
@@ -372,4 +396,247 @@ section.videos-section {
   top: 41px;
   left: 0px;
   z-index: 100;
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.main-section {
+  flex: 1;
+}
+
+.sidebar {
+  width: 300px; /* Ajuste la largeur selon tes préférences */
+}
+
+.science-widget {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.science-widget img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.science-widget p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #00FFFF;
+  color: #0d47a1;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0d47a1;
+  color: #00FFFF;
+}
+
+/* partie maths */
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.main-content ul {
+  list-style-type: disc;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.main-content ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.main-content ul li:before {
+ 
+  margin-right: 10px;
+}
+
+.section-link {
+  display: block;
+  color: #00ACC1; /* Couleur principale */
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.section-link:hover {
+  color: #FF6F61; /* Couleur au survol */
+}
+
+/* Styles pour le texte en gras */
+.section-bold {
+  font-weight: bold;
+  color: #333; /* Couleur de texte principale */
+}
+
+/* Styles pour les emojis */
+.section-emoji {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.competition-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.academy h2 {
+  font-size: 20px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.competition-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competition-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-size: 18px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #276cbb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 5px;
+}
+.lien{
+  text-decoration:none;
+  color:#0d47a1;
+}
+.lien:hover{
+  text-decoration: underline;
+  color:#276cbb;
+}
+.link:hover {
+  background-color: #0d47a1;
+  color: #00FFFF;
+}
+
+.sub-title {
+  font-size: 24px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.info-section {
+  margin-top: 40px;
+}
+
+.subsection {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.subsection h2 {
+  font-size: 20px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.subsection p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00FFFF;
+  color: #0d47a1;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #0d47a1;
+  color: #00FFFF;
+}
+
+.experiments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.experiment {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiment h3 {
+  color: #0d47a1;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.experiment p {
+  margin: 5px 0;
 }
