@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>1-Nombres à virgules et autres outils
+                        </h1>
+                        <section class="exercise">
+                            <h2>Petites fiches et gros travail </h2>
+                            <p>Corrigé de l'exercice "Petites fiches et gros travail":</p>
+                            <pre><code>
+for i in range(6):
+    auteur=input()
+    titre=input()
+    print(titre)
+    print(auteur)
+                                </code></pre></section>
+                                <section class="exercise">
+                                    <h2> Priorité alphabétique </h2>
+                                    <p>Corrigé de l'exercice "Priorité alphabétique ":</p>
+                                    <pre><code>
+nom1=input()
+nom2=input()
+if nom1< nom2:
+    print(nom1)
+elif nom2< nom1:
+    print(nom2)
+                                        </code></pre></section>
+                                        <section class="exercise">
+                                            <h2>Une ligne sur deux </h2>
+                                            <p>Corrigé de l'exercice "Une ligne sur deux":</p>
+                                            <pre><code>
+nbLignes=int(input())
+for i in range(nbLignes):
+    texte=input()
+    if i%2==0: #on vérifie si l'indice est pair. Pair car i commence à 0, le 1 correspond au 0 dans le code.
+        print(texte)
+                                                </code></pre></section>
+                                                <section class="exercise">
+                                                    <h2>Résumés de livres </h2>
+                                                    <p>Corrigé de l'exercice "Résumés de livres":</p>
+                                                    <pre><code>
+nbLivres = int(input())
+longueurMinimale = int(input())
+
+for i in range(nbLivres):
+    titre = input()
+    description = input()
+
+    if (len(description) < longueurMinimale):
+        print(titre)
+                                                        </code></pre></section>
+                                                        <section class="exercise">
+                                                            <h2>Lire ou ne pas lire, telle est la question </h2>
+                                                            <p>Corrigé de l'exercice "Lire ou ne pas lire, telle est la question":</p>
+                                                            <pre><code>
+nbLivres=int(input())
+maximum=0
+for i in range(nbLivres):
+    titre=input()
+    if len(titre)>maximum:
+        print(titre)
+        maximum=len(titre)
+                                                                </code></pre></section>
+                                                                <section class="exercise">
+                                                                    <h2> Fiches d’inscription</h2>
+                                                                    <p>Corrigé de l'exercice "Fiches d’inscription":</p>
+                                                                    <pre><code>
+        nbPersonnes =int(input())
+        for i in range(nbPersonnes):
+            nom=input().split()
+            print("{} {}".format(nom[1], nom[0]))   
+                                                                        </code></pre></section>
+                                                                        <section class="exercise">
+                                                                            <h2> Analyse de fréquence</h2>
+                                                                            <p>Corrigé de l'exercice "Analyse de fréquence":</p>
+                                                                            <pre><code>
+nbLignes, nbMots = map(int, input().split(' '))
+
+frequence= [0] * 101
+
+for i in range(nbLignes):
+    mots = input().split(' ')
+    for i in mots:
+        frequence[len(i)] += 1
+
+for i in range(101):
+    if (frequence[i] != 0):
+        print(i, " : ", frequence[i])
+                                                                                </code></pre></section>
+                                                                                <section class="exercise">
+                                                                                    <h2>Impression d’étiquettes </h2>
+                                                                                    <p>Corrigé de l'exercice "Impression d’étiquettes":</p>
+                                                                                    <pre><code>
+texte=input()
+for i in texte:
+    print(i)
+                                                                                        </code></pre></section>

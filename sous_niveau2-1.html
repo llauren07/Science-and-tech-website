@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>1-Nombres à virgules et autres outils
+                        </h1>
+                        <section class="exercise">
+                            <h2>Origami </h2>
+                            <p>Corrigé de l'exercice "Origami":</p>
+                            <pre><code>
+epaisseur=0.011
+print(epaisseur*2**15)
+                                </code></pre></section>
+                                <section class="exercise">
+                                    <h2>Conversions de distances </h2>
+                                    <p>Corrigé de l'exercice "Conversions de distances":</p>
+                                    <pre><code>
+nbLieues=float(input())
+print(nbLieues/0.707)
+                                    </code></pre></section>
+                                    <section class="exercise">
+                                        <h2> Comparatif de prix</h2>
+                                        <p>Corrigé de l'exercice "Comparatif de prix":</p>
+                                        <pre><code>
+nbLegumes=int(input())
+for i in range(nbLegumes):
+    poids=float(input())
+    age=float(input())
+    prix=float(input())
+    print(prix/poids)
+                                            </code></pre></section>
+                                            <section class="exercise">
+                                                <h2> Moyenne des notes</h2>
+                                                <p>Corrigé de l'exercice "Moyenne des notes":</p>
+                                                <pre><code>
+nbNotes=int(input())
+somme=0.0
+for i in range(nbNotes):
+   note=float(input())
+   somme+=note
+print(somme/nbNotes)
+</code></pre></section>
+                                                    <section class="exercise">
+                                                        <h2> Augmentation de la population</h2>
+                                                        <p>Corrigé de l'exercice "Augmentation de la population":</p>
+                                                        <pre><code>
+from math import*
+population=int(input())
+croissance=float(input())
+coefficient=1+croissance/100
+print(floor(coefficient*population))
+</code></pre></section>
+                                                            <section class="exercise">
+                                                                <h2> Construction de maisons</h2>
+                                                                <p>Corrigé de l'exercice "Construction de maisons":</p>
+                                                                <pre><code>
+from math import*
+qntCiment=float(input())
+nbSacs=ceil(qntCiment/60)
+print(nbSacs*45)
+</code></pre></section>
+                                                                    <section class="exercise">
+                                                                        <h2>Soirée orageuse </h2>
+                                                                        <p>Corrigé de l'exercice "Soirée orageuse":</p>
+                                                                        <pre><code>
+from math import*
+temps=float(input())
+vitesse=0.34029 
+#v=d/t donc d=v*t
+print(round(vitesse*temps))
+</code></pre></section>
+                                                                            <section class="exercise">
+                                                                                <h2>Augmentation des taxes </h2>
+                                                                                <p>Corrigé de l'exercice "Augmentation des taxes":</p>
+                                                                                <pre><code>
+from math import *
+
+taxeActuelle = float(input()) / 100
+nouvelleTaxe = float(input()) / 100
+prixLegume = float(input())
+
+prixSansTaxe = prixLegume / (1 + taxeActuelle) 
+prixNouvelleTaxe = prixSansTaxe * (1 + nouvelleTaxe)
+
+print(round(prixNouvelleTaxe * 100) / 100)
+</code></pre></section>
+                                                                                    <section class="exercise">
+                                                                                        <h2> Achat de livres</h2>
+                                                                                        <p>Corrigé de l'exercice "Achat de livres":</p>
+                                                                                        <pre><code>
+argent=float(input())
+prixLivre=float(input())
+nbLivres=0
+while argent>=prixLivre:
+   nbLivres+=1
+   argent-=prixLivre
+print(nbLivres)
+</code></pre></section>
+                                                                                            <section class="exercise">
+                                                                                                <h2> Une belle récolte</h2>
+                                                                                                <p>Corrigé de l'exercice "Une belle récolte":</p>
+                                                                                                <pre><code>
+nbPersonnes=int(input())
+nbFruits=int(input())
+if nbFruits%nbPersonnes==0:
+   print("oui")
+else:
+   print("non")
+   </code></pre></section>
+                                                                                                    <section class="exercise">
+                                                                                                        <h2> La roue de la fortune</h2>
+                                                                                                        <p>Corrigé de l'exercice "La roue de la fortune":</p>
+                                                                                                        <pre><code>
+nbZones=int(input())
+print(nbZones%24)
+</code></pre></section>

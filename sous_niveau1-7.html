@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>7– Conditions avancées, opérateurs booléens</h1>
+                        <section class="exercise">
+                            <h2>Espion étranger</h2>
+                            <p>Corrigé de l'exercice "Espion étranger":</p>
+                            <pre><code>
+debut=int(input())
+fin=int(input())
+nbEntrées=int(input())
+total=0
+for i in range(nbEntrées):
+    date=int(input())
+    if date>=debut and date<=fin:
+        total+=1
+print(total)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+
+                        <h2>Maison de l'espion</h2>
+                        <p>Corrigé de l'exercice "Maison de l'espion":</p>
+                        <pre><code>
+xMin=int(input())
+xMax=int(input())
+yMin=int(input())
+yMax=int(input())
+total=0
+nbMaisons=int(input())
+for i in range(nbMaisons):
+    x=int(input())
+    y=int(input())
+    if x>=xMin and x<=xMax and y>=yMin and y<=yMax:
+        total+=1
+print(total)
+                        </code></pre>
+                    </section>
+                    <section class="exercise">
+
+                    <h2>Nombre de jours dans le mois</h2>
+                    <p>Corrigé de l'exercice "Nombre de jours dans le mois":</p>
+                    <pre><code>
+numero=int(input())
+if numero==11:
+    print(29)
+elif numero==4 or numero==5 or numero==6 or numero==10:
+    print(31)
+else: 
+    print(30)
+                    </code></pre>
+                </section>
+                <section class="exercise">
+
+                <h2>Amitié entre gardes</h2>
+                <p>Corrigé de l'exercice "Amitié entre gardes":</p>
+                <pre><code>
+debut1=int(input())
+fin1=int(input())
+debut2=int(input())
+fin2=int(input())
+if debut2>=debut1 and debut2<=fin1:
+    print("Amis")
+elif debut1>=debut2 and debut1<=fin2:
+    print("Amis")
+else: 
+    print("Pas amis")
+                </code></pre>
+            </section>
+            <section class="exercise">
+
+            <h2>Nombre de personnes à la fête</h2>
+            <p>Corrigé de l'exercice "Nombre de personnes à la fête":</p>
+            <pre><code>
+maximum=0
+entree=0
+nbPersonnes=int(input())
+for i in range(nbPersonnes*2):
+    variation=int(input())
+    if variation>0:
+        entree+=1
+    else: 
+        entree-=1
+    if entree>=maximum:
+        maximum=entree
+print(maximum)
+            </code></pre>
+        </section>
+        <section class="exercise">
+
+        <h2>Casernes de pompiers</h2>
+        <p>Corrigé de l'exercice "Casernes de pompiers":</p>
+        <pre><code>
+nbPaires = int(input())
+
+for paire in range(nbPaires):
+    xMin1 = int(input())
+    xMax1 = int(input())
+    yMin1 = int(input())
+    yMax1 = int(input())
+    xMin2 = int(input())
+    xMax2 = int(input())
+    yMin2 = int(input())
+    yMax2 = int(input())
+
+    if (not(xMax1 <= xMin2 or xMax2 <= xMin1) and not(yMax1 <= yMin2 or yMax2 <= yMin1)):
+        print("OUI")
+    else:
+        print("NON")
+        </code></pre>
+    </section>
+    <section class="exercise">
+
+    <h2>Personne disparue</h2>
+    <p>Corrigé de l'exercice "Personne disparue":</p>
+    <pre><code>
+numRecherche = int(input())
+
+tailleListe = int(input())
+
+estDansLaVille = True
+
+for i in range(tailleListe):
+    num = int(input())
+
+    if (num == numRecherche):
+        estDansLaVille = False
+
+if (estDansLaVille):
+    print("Encore dans la ville")
+else:
+    print("Sorti de la ville")
+    </code></pre>
+</section>
+
+
+
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+
+                        <h2>La grande fête</h2>
+                        <p>Corrigé de l'exercice "La grande fête":</p>
+                        <pre><code>
+debut=int(input())
+fin=int(input())
+nbInvites=int(input())
+totalSuspect=0
+for i in range(nbInvites):
+    arrivee=int(input())
+    depart=int(input())
+    pasDansIntervalle= (arrivee<debut and depart<debut) or arrivee>fin
+    if not(pasDansIntervalle):
+        totalSuspect+=1
+print(totalSuspect)
+                        </code></pre>
+                    </section>
+                    <section class="exercise">
+
+                    <h2>L'espion est démasqué !</h2>
+                    <p>Corrigé de l'exercice "L'espion est démasqué !":</p>
+                    <pre><code>
+nbPersonnes=int(input())
+for i in range(nbPersonnes):
+    taille=int(input())
+    age=int(input())
+    poids=int(input())
+    cheval=int(input())
+    brun=int(input())
+    nbCriteres=0
+    if taille>=178 and taille<=182:
+        nbCriteres+=1
+    if age>=34:
+        nbCriteres+=1
+    if poids<70:
+        nbCriteres+=1
+    if cheval==0:
+        nbCriteres+=1
+    if brun==1:
+        nbCriteres+=1
+    if nbCriteres==5:
+        print("Très probable")
+    elif nbCriteres==3 or nbCriteres==4:
+        print("Probable")
+    elif nbCriteres==0:
+        print("Impossible")
+    else:
+        print("Peu probable")
+                    </code></pre>
+            </section>
+            <section class="exercise">
+
+            <h2>Zones de couleurs</h2>
+            <p>Corrigé de l'exercice "Zones de couleurs":</p>
+            <pre><code>
+nbJetons=int(input())
+for i in range(nbJetons):
+   x=int(input())
+   y=int(input())
+   if x>90 or y>70 or x<0 or y < 0:
+      print("En dehors de la feuille")
+   elif (x>=15 and x<=45 and y>=60 and y<=70 )or (x>=60 and x<=85 and y>=60 and y<=70):
+      print("Dans une zone rouge")
+   elif (x>=10 and x<=25 and y>=10 and y<=55) or (x>=25 and x<=85 and y>=10 and y<=20) or (x>=50 and x<=85 and y>=20 and y<=55) or (x>=25 and x<=50 and y>=45 and y<=55):
+      print("Dans une zone bleue")
+   else:
+      print("Dans une zone jaune")
+                </code></pre></section>

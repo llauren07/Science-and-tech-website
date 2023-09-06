@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>2 – Répétitions d'instructions</h1>
+                        <section class="exercise">
+                            <h2>Punition</h2>
+                            <p>Corrigé de l'exercice "Punition":</p>
+                            <p>Conseil: Copiez-collez le texte de l'énoncé.</p>
+                            <pre><code>
+for i in range(135):
+    print("Je dois respecter le Grand Sorcier.") 
+                            </code></pre>
+                        </section>
+                            <section class="exercise">
+                                <h2>Mathématiques de base</h2>
+                                <p>Corrigé de l'exercice "Mathématiques de base":</p>
+                                <p>La syntaxe est vraiment importante en info. Soyez rigoureux!</p>
+                                
+                                <pre><code>
+for loop in range(13): #il manquait les 2 points  
+    print("9 * 8 = 72")#ajout de l'indentation et fermeture des guillemets
+                                </code></pre>
+                            </section>
+                                <section class="exercise">
+                                    <h2>Transport d'eau</h2>
+                                    <p>Corrigé de l'exercice "Transport d'eau":</p>
+                                    <p>Depuis le début, vous utilisez "from robot import*". Savez-vous à quoi</p>
+                                    <p>ça sert? Cela permet d'importer le module robot qui contient les fonctions pour commander le robot qui ne sont</p>
+                                    <p>directement dans Python</p>
+                                    <pre><code>
+from robot import * 
+
+for i in range(2):
+    gauche()
+print("Bonjour, laissez-moi vous aider")
+ramasser()
+for i in range(32):
+    droite()
+deposer()
+                                    </code></pre>
+                                </section>
+                                    <section class="exercise">
+                                        <h2>Le secret du Goma</h2>
+                                        <p>Corrigé de l'exercice "Le secret du Goma":</p>
+                                        <pre><code>
+from robot import*
+for i in range(15):
+    droite()
+    ramasser()
+droite()
+deposer()
+                                        </code></pre>
+                                    </section>
+                                        <section class="exercise">
+                                            <h2>Sisyphe</h2>
+                                            <p>Corrigé de l'exercice "Sisyphe":</p>
+                                            <pre><code>
+from robot import *
+for i in range(21):
+    haut()
+    droite()
+for i in range(21):
+    gauche()
+    bas()
+                                            </code></pre>
+                                        </section>
+                                            <section class="exercise">
+                                                <h2>Page d'écriture</h2>
+                                                <p>Corrigé de l'exercice "Page d'écriture":</p>
+                                                <p>La correction donnée par le site est répétitive. On va donc utiliser</p>
+                                                <p>une fonction. Si vous ne savez pas ce que c'est, voici un lien pour vous expliquer:</p>
+                                                <p><a href="https://python.doctor/page-apprendre-creer-fonction-en-python"target="_blank">Les fonctions</a><p>
+                                                <pre><code>
+def rep(x): #ici on utilise une fonction qui prend en paramètre le motif.
+    for i in range(30):
+        print(x,end="_")
+    print()
+rep("a")#on appelle la fonction en mettant en argument la lettre a
+rep("b")
+rep("c")
+                                                </code></pre>
+                                            </section>
+                                                <section class="exercise">
+                                                    <h2>Jeu de dames</h2>
+                                                    <p>Corrigé de l'exercice "Jeu de dames":</p>
+                                                    <p>Solution avec boucles imbriquées. Il était possible d'utiliser</p>
+                                                    <p>une fonction.</p>
+                                                    <pre><code>
+for i in range(20):
+    for i in range(20):
+        print("OX",end="")
+    print()
+    for i in range(20):
+        print("XO",end="")
+    print()
+                                                         
+                                                    </code></pre>
+                                                </section>
+                                                    <section class="exercise">
+                                                        <h2>Mont Kailash</h2>
+                                                        <p>Corrigé de l'exercice "Mont Kailash":</p>
+                                                        <pre><code>
+from robot import *
+
+for i in range(108):
+    for i in range(13):
+        haut()
+    for i in range(13):
+        droite()
+    for i in range(13):
+        bas()
+    for i in range(13):
+        gauche()
+                                                        </code></pre>
+                                                    </section>
+                                                       
+                                                            <section class="exercise">
+                                                                <h2>Vendanges</h2>
+                                                                <p>Corrigé de l'exercice "Vendanges":</p>
+                                                                <pre><code>
+from robot import *
+for i in range(20):
+    ramasser()
+    for i in range(15):
+        droite()
+    deposer()
+    for i in range(15):
+        gauche()
+    
+                                                                       
+                                                                </code></pre>
+                                                        </section>
+                            <section class="exercise">
+                                <h2>Le Grand Événement</h2>
+                                <p>Corrigé de l'exercice "Le Grand Événement":</p>
+                                <pre><code>
+from robot import *
+
+for i in range(9):
+    haut()
+droite()
+for i in range(4):
+    for i in range(8):
+        bas()
+    droite()
+    for i in range(8):
+        haut()
+    droite()
+for i in range(9):
+    bas()
+for i in range(9):
+    gauche()   
+                                </code></pre>
+                            </section>

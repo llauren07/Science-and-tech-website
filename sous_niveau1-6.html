@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>2 – Répétitions d'instructions</h1>
+                        <section class="exercise">
+                            <h2>Villes et villages</h2>
+                            <p>Corrigé de l'exercice "Villes et villages":</p>
+                            <pre><code>
+nbLieux=int(input())
+nbVille=0
+for i in range(nbLieux):
+    population=int(input())
+    if population>10000:
+        nbVille+=1
+print(nbVille)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Planning de la journée</h2>
+                            <p>Corrigé de l'exercice "Planning de la journée":</p>
+                            <pre><code>
+distance = int(input())
+nbvillages = int(input())
+atteignables = 0
+for loop in range (nbvillages):
+    distancevillage = int(input())
+    if distance-distancevillage  <= 50:
+        atteignables = atteignables + 1
+    elif distance -distancevillage>= -50:
+        
+            atteignables = atteignables + 1
+        
+print (atteignables)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Étape la plus longue</h2>
+                            <p>Corrigé de l'exercice "Étape la plus longue":</p>
+                            <pre><code>
+nbJours=int(input())
+maximum=0
+for i in range(nbJours):
+    distance=int(input())
+    if distance>maximum:
+        maximum=distance
+print(maximum)
+                                   
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Calcul des dénivelées</h2>
+                            <p>Corrigé de l'exercice "Calcul des dénivelées":</p>
+                            <pre><code>
+nbVariations=int(input())
+nbMontees=0
+nbDescentes=0
+for i in range(nbVariations):
+    distance=int(input())
+    if distance>0:
+        nbMontees+=distance
+    if distance< 0:
+        nbDescentes+=distance
+print(nbMontees)
+print(-nbDescentes)
+                                
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Type d'arbres</h2>
+                            <p>Corrigé de l'exercice "Type d'arbres":</p>
+                            <pre><code>
+hauteur=int(input())
+nbFolioles=int(input())
+if hauteur<=5 and nbFolioles>=8:
+    print("Tinuviel")
+elif hauteur>=10 and nbFolioles>=10:
+    print("Calaelen")
+elif hauteur<=8 and nbFolioles<=5:
+    print("Falarion")
+else:
+    print("Dorthonion")
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Tarifs de l'auberge</h2>
+                            <p>Corrigé de l'exercice "Tarifs de l'auberge":</p>
+                            <pre><code>
+age=int(input())
+poids=int(input())
+if age==60:
+    print(0)
+elif age< 10:
+    print(5)
+else:
+    if poids >=20:
+        print(40)
+    else:
+        print(30)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Protection du village</h2>
+                            <p>Corrigé de l'exercice "Protection du village":</p>
+                            <pre><code>
+nbMaisons=int(input())
+xMinimum=10000000
+yMinimum=10000000
+xMax=0
+yMax=0
+for i in range(nbMaisons):
+    x=int(input())
+    y=int(input())
+    if x< xMinimum:
+        xMinimum=x
+    if y< yMinimum:
+        yMinimum=y
+    if x> xMax:
+        xMax=x
+    if y> yMax:
+        yMax=y
+largeur=xMax-xMinimum
+longueur=yMax-yMinimum
+print(2*largeur+2*longueur)
+                                   
+                                      
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Le juste prix</h2>
+                            <p>Corrigé de l'exercice "Le juste prix":</p>
+                            <pre><code>
+minimum=1000000000000000000
+rang=0   
+min2=0
+nbMarchands=int(input())
+for i in range(nbMarchands):
+    rang+=1
+    prix=int(input())
+    if prix<=minimum:
+        min2=rang
+        minimum=prix
+print(min2)
+                                     
+                            </code></pre>
+                        </section>

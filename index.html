@@ -4,6 +4,7 @@
         <title>Science&Tech</title>
         <link rel="shortcut icon" href="logo.png"/>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
         <header class="header">
@@ -14,23 +15,24 @@
             <nav class="menu">
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="maths.html">Maths</a>
+                    <li><a role="button" href="maths.html">Maths</a>
                     <ul class="sub-menu">
-                        <li><a href="coulisses.html">Derrière les coulisses</a></li>
-                        <li><a href="plusloin.html">Pour aller plus loin</a></li>
-                        <li><a href="olympiades.html">Olympiades</a></li>
-                        <li><a href="revision.html">Révisions et sujets de DS</a></li>
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs" href="olympiades.html">Olympiades</a></li>
+                        <li><a href class="cs"="revision.html">Révisions et sujets de DS</a></li>
                     </ul></li>
                         
                     <li><a href="physique.html">Physique</a></li>
                     <li><a href="info.html">Informatique</a>
                     <ul class="sub-menu">
-                        <li><a href="commencer.html">Comment commencer</a></li>
-                        <li><a href="algo.html">L'algorithmique</a></li>
-                        <li><a href="correctionsios.html">Corrections France IOI</a></li>
-                        <li><a href="arduino.html">Arduino</a></li></ul>
+                        <li><a class="cs" href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs" href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
                         </ul>
                     </li>
+                </ul>
                         
                         
 
@@ -40,68 +42,50 @@
         </header>
         
         </section>
-        <div class="content">
-            <section class="section">
-                <div class="section-title">Olympiades de Maths</div>
-                <div class="section-content">
-                    <div class="slideshow-content">
-                        <div class="mySlides">
-                    <img src="olympiades de maths.png">
-                        </div>
-                        <div class="mySlides">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/IMO_logo.svg/1200px-IMO_logo.svg.png">
-                    </div>
-                    <div class="mySlides">
-
-                    <img src="https://www.mathraining.be/assets/mathraining-12d92cffbed88880297bc54435fee72a8a1781cc2ce771e743633a53df58e716.png">
-                </div>
-                </div>
-                </div>
-            </section>
-    
-            <section class="section">
-                <div class="section-title">Correction France-IOI</div>
-                <div class="section-content">
-                    <!-- Contenu de la Correction France-IOI -->
-                </div>
-            </section>
-    
-            <section class="section">
-                <div class="section-title">Découverte de l'Algorithmique</div>
-                <div class="section-content">
-                    <!-- Contenu de la Découverte de l'Algorithmique -->
-                </div>
-            </section>
-    
-            <section class="section">
-                <div class="section-title">Actualité - L'IA, Qu'est-ce que c'est ?</div>
-                <div class="section-content">
-                <div class="videocont">
-                    <div class="videoA">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kazkft5_yek?si=fpK0L_9I4OIzFTX1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </div>
+        <section class="hero">
+            <h2>Bienvenue sur Science&Tech</h2>
+            <p>Découvrez le monde passionnant de la science, des mathématiques, de la physique et de l'informatique.</p>
+            <a href="articles.html" class="cta-button">Explorez nos articles</a>
+        </section>
         
-    
+        <section class="featured-articles">
+            <!-- Mettez en avant ici quelques-uns de vos articles récents -->
+            <article>
+                <img src="article1.jpg" alt="Article 1">
+                <h3>Titre de l'article 1</h3>
+                <p>Description de l'article 1.</p>
+                <a href="article1.html">Lire la suite</a>
+            </article>
+            <article>
+                <img src="article2.jpg" alt="Article 2">
+                <h3>Titre de l'article 2</h3>
+                <p>Description de l'article 2.</p>
+                <a href="article2.html">Lire la suite</a>
+            </article>
+            <section class="maths-in-real-life">
+                <div class="container">
+                    <h2>Les Mathématiques dans la Vraie Vie</h2>
+                    <p>Les mathématiques sont bien plus qu'une matière scolaire. Elles jouent un rôle essentiel dans de nombreux aspects de notre quotidien. De l'architecture à la finance, en passant par la technologie, les mathématiques sont partout.</p>
+                    <p>Découvrez comment les mathématiques influencent notre monde et notre compréhension de phénomènes complexes.</p>
+                    <a href="maths.html" class="cta-button">Explorer les mathématiques</a>
+                </div>
+                <div class="image-preview">
+                    <img src="maths-preview.jpg" alt="Mathematics in Real Life">
+                </div>
+            </section>
+        </section>
+        
         <footer class="footer">
             <div class="social-icons">
-                <a href="" class="social-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670325.png" alt="Discord">
+                <a href="#" class="social-icon">
+                    <img src="discord-icon.png" alt="Discord">
                 </a>
                 <a href="https://github.com/llauren07" class="social-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/128/4926/4926624.png" alt="GitHub">
+                    <img src="github-icon.png" alt="GitHub">
                 </a>
-                <a href="mailto:maths.et.tech@gmail.com
-                " class="social-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/128/4296/4296482.png" alt="Mail">
+                <a href="mailto:science.et.tech2023@gmail.com" class="social-icon">
+                    <img src="mail-icon.png" alt="Mail">
                 </a>
             </div>
-            
+            <p>© 2023 Science&Tech. Tous droits réservés.</p>
         </footer>
-        
-    </body>
-    <script src="script.js"></script>
-</html>

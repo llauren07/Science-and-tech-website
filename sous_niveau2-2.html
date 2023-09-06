@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>	2 – Découverte des tableaux</h1>
+                        <section class="exercise">
+                            <h2>Préparation de l'onguent</h2>
+                            <p>Corrigé de l'exercice "Préparation de l'onguent":</p>
+                            <pre><code>
+liste=[500, 180, 650, 25, 666, 42, 421, 1, 370,211]
+ingredient=int(input())
+print(liste[ingredient])
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Liste de courses</h2>
+                            <p>Corrigé de l'exercice "Liste de courses":</p>
+                            <pre><code>
+liste=[9, 5, 12, 15, 7, 42, 13, 10, 1,20]
+total=0
+for i in range(10):
+    masse=int(input())
+    total+=masse*liste[i]
+print(total)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Grand inventaire</h2>
+                            <p>Corrigé de l'exercice "Grand inventaire":</p>
+                            <pre><code>
+stock=[0]*10
+nbOperations =int(input())
+for i in range(nbOperations):
+    ingredient=int(input())
+    quantite=int(input())
+    stock[ingredient-1]+=quantite
+for i in stock:
+    print(i)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Étude de marché</h2>
+                            <p>Corrigé de l'exercice "Étude de marché":</p>
+                            <pre><code>
+nbProduits =int(input())
+tableau=[0]*nbProduits
+nbPersonnes=int(input())
+for i in range(nbPersonnes):
+    prefere=int(input())
+    tableau[prefere]+=1
+for i in tableau:
+    print(i)
+</code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Répartition du poids</h2>
+                            <p>Corrigé de l'exercice "Répartition du poids":</p>
+                            <pre><code>
+nbCharrettes =int(input())
+masseCharrettes=[0.0]*nbCharrettes
+somme=0
+for i in range(nbCharrettes):
+    masse=float(input())
+    masseCharrettes[i]+=masse
+    somme+=masse
+moyenne=somme/nbCharrettes
+for i in masseCharrettes:
+    print(moyenne-i)
+                                    
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Visite de la mine</h2>
+                            <p>Corrigé de l'exercice "Visite de la mine":</p>
+                            <pre><code>
+nbDeplacements=int(input())
+deplacements=[0]*nbDeplacements
+for i in range(nbDeplacements):
+    deplacement=int(input())
+    deplacements[i]+=deplacement
+deplacements.reverse()
+for i in deplacements:
+    if i==5:
+        print(4)
+    elif i==4:
+        print(5)
+    elif i==1:
+        print(2)
+    elif i==2:
+        print(1)
+    else:
+        print(3)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Journée des cadeaux</h2>
+                            <p>Corrigé de l'exercice "Journée des cadeaux":</p>
+                            <pre><code>
+nbHabitants = int(input())
+
+fortunes = [0] * nbHabitants
+
+for i in range(nbHabitants):
+    fortunes[i] = int(input())
+    
+fortunes.sort()
+
+fortuneMediane = 0
+indiceMoyen = (nbHabitants - 1) // 2
+if (nbHabitants % 2 == 1):
+    fortuneMediane = fortunes[indiceMoyen ]   
+else :
+    fortuneMediane = (fortunes[indiceMoyen ] + fortunes[indiceMoyen + 1]) / 2
+    
+print(fortuneMediane)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Course à trois jambes</h2>
+                            <p>Corrigé de l'exercice "Course à trois jambes":</p>
+                            <pre><code>
+
+nbParticipants = int(input())
+
+nombres = [0] * nbParticipants
+
+for i in range(nbParticipants):
+    nombres[i] = int(input())
+    
+nombres.sort()
+
+for i in range(nbParticipants // 2):
+    print("{} {}".format(nombres[i], nombres[nbParticipants - 1 - i]))
+                            </code></pre>
+                        </section>
+                       

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>2 – Répétitions d'instructions</h1>
+                        <section class="exercise">
+                            <h2>Département de médecine : contrôle d'une épidémie</h2>
+                            <p>Corrigé de l'exercice "Département de médecine : contrôle d'une épidémie":</p>
+                            <pre><code>
+population=int(input())
+nbMalades=1
+nbJours=1
+while nbMalades<population:
+    nbJours+=1
+    nbMalades=nbMalades+2*nbMalades
+print(nbJours)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Administration : comptes annuels</h2>
+                            <p>Corrigé de l'exercice "Administration : comptes annuels":</p>
+                            <pre><code>
+nb=0
+somme=0
+while nb!=-1:
+    nb=int(input())
+    somme+=nb
+print(somme+1)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Département de pédagogie : le « c'est plus, c'est moins »</h2>
+                            <p>Corrigé de l'exercice "Département de pédagogie : le « c'est plus, c'est moins »":</p>
+                            <pre><code>
+nbCherche=int(input())
+nbEnfant=int(input())
+nbEssais=1
+while nbEnfant!=nbCherche:
+    nbEssais+=1
+    if nbEnfant<nbCherche:
+        print("c'est plus")
+    elif nbEnfant>nbCherche:
+        print("c'est moins")
+    nbEnfant=int(input())
+
+print("Nombre d'essais nécessaires :")
+print(nbEssais)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Département d'architecture : construction d'une pyramide</h2>
+                            <p>Corrigé de l'exercice "Département d'architecture : construction d'une pyramide":</p>
+                            <pre><code>
+nbMaxPierres = int(input())
+
+cote = 0
+nbPierresActu = 0
+
+while (nbPierresActu <= nbMaxPierres):
+    cote += 1
+    nbPierresActu += cote * cote
+
+nbPierresActu -= cote * cote
+cote -= 1
+
+print(cote)
+print(nbPierresActu)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Département de chimie : mélange explosif</h2>
+                            <p>Corrigé de l'exercice "Département de chimie : mélange explosif":</p>
+                            <pre><code>
+nbTotalMesures = int(input())
+tempMin = int(input())
+tempMax = int(input())
+
+doitContinuer = True
+
+count = 0
+
+while (doitContinuer):
+    tempActu = int(input())
+    count += 1
+
+    if (tempActu >= tempMin and tempActu <= tempMax):
+        print("Rien à signaler")
+    else:
+        print("Alerte !!")
+        doitContinuer = False
+
+    if (count >= nbTotalMesures):
+        doitContinuer = False
+                            </code></pre>
+                        </section>
+                        

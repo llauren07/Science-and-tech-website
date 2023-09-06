@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>	4 – Lecture de l'entrée</h1>
+                        <section class="exercise">
+                            <h2>Récoltes</h2>
+                            <p>Corrigé de l'exercice "Récoltes":</p>
+                            <pre><code>
+longueur =int(input())
+print(23*longueur**2)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Retraite spirituelle</h2>
+                            <p>Corrigé de l'exercice "Retraite spirituelle":</p>
+                            <pre><code>
+nbJours=int(input())
+nbIncantations=3600*16
+print(nbJours*nbIncantations)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Âge des petits-enfants</h2>
+                            <p>Corrigé de l'exercice "Âge des petits-enfants":</p>
+                            <pre><code>
+âgeCadet = int(input())
+âgeAîné = int(input())
+différence = âgeAîné - âgeCadet
+print(différence)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Encore des punitions</h2>
+                            <p>Corrigé de l'exercice "Encore des punitions":</p>
+                            <pre><code>
+nbLignes=int(input())
+for i in range(nbLignes):
+    print("Je dois suivre en cours")
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Graduation de thermomètres</h2>
+                            <p>Corrigé de l'exercice "Graduation de thermomètres":</p>
+                            <pre><code>
+tempMin=int(input())
+tempMax=int(input())
+for i in range(tempMin,tempMax+1):
+    print(i)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Jeu de calcul mental</h2>
+                            <p>Corrigé de l'exercice "Jeu de calcul mental":</p>
+                            <pre><code>
+nbNombres=int(input())
+nbDeDepart=66
+for i in range(1,nbNombres+1):
+    nbDeDepart=nbDeDepart*i
+    print(nbDeDepart)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>La Grande Braderie</h2>
+                            <p>Corrigé de l'exercice "La Grande Braderie":</p>
+                            <pre><code>
+positionDepart=int(input())
+largeurEmplacement =int(input())
+nbVendeurs=int(input())
+tot=positionDepart
+print(tot)
+for i in range(nbVendeurs):
+    tot+=largeurEmplacement 
+    print(tot)
+                                   
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Bétail</h2>
+                            <p>Corrigé de l'exercice "Bétail":</p>
+                            <pre><code>
+total=0
+for i in range(20):
+    entier=int(input())
+    total+=entier
+print(total)   
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Socles pour statues</h2>
+                            <p>Corrigé de l'exercice "Socles pour statues":</p>
+                            <pre><code>
+largeurSol=int(input())
+largeurSuperieure=int(input())
+volume=0
+for i in range(largeurSuperieure,largeurSol+1):
+    volumeSocle=i**2
+    volume+=volumeSocle 
+print(volume)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Le plus beau Karva</h2>
+                            <p>Corrigé de l'exercice "Le plus beau Karva":</p>
+                            <pre><code>
+nbKarvas=int(input())
+for i in range(nbKarvas):
+    poids=int(input())
+    age=int(input())
+    longueurCorne=int(input())
+    hauteurGarrot=int(input())
+    note=longueurCorne*hauteurGarrot+poids
+    print(note)
+                                   
+                            </code></pre>
+                        </section>

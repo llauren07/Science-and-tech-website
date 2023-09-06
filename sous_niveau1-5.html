@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Science&Tech</title>
+        <link rel="shortcut icon" href="logo.png"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="logoclair.png" alt="Logo">
+                <h1>Science&Tech</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="maths.html">Maths</a></li>
+                    <ul class="sub-menu">
+                        <li><a class="cs"href="coulisses.html">Derrière les coulisses</a></li>
+                        <li><a class="cs"href="plusloin.html">Pour aller plus loin</a></li>
+                        <li><a class="cs"href="olympiades.html">Olympiades</a></li>
+                        <li><a class="cs"href="revision.html">Révisions et sujets de DS</a></li>
+                    </ul></li>
+                        
+                    <li><a href="physique.html">Physique</a></li>
+                    <li><a href="info.html"class="active">Informatique</a>
+                        <ul class="sub-menu">
+                        <li><a class="cs"href="commencer.html">Comment commencer</a></li>
+                        <li><a class="cs"href="algo.html">L'algorithmique</a></li>
+                        <li><a class="cs"href="correctionsios.html">Corrections France IOI</a></li>
+                        <li><a class="cs"href="articles.html">Articles</a></li></ul>
+                    </li>
+                    </ul></nav></header>
+                    <div class="main-content">
+                        <h1>2 – Répétitions d'instructions</h1>
+                        <section class="exercise">
+                            <h2>Transport des bagages</h2>
+                            <p>Corrigé de l'exercice "Transport des bagages":</p>
+                            <pre><code>
+nbPaquet=int(input())
+massePaquet=int(input())
+masseTotale=massePaquet*nbPaquet
+if masseTotale>105:
+    print("Surcharge !")
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Bornes kilométriques</h2>
+                            <p>Corrigé de l'exercice "Bornes kilométriques":</p>
+                            <pre><code>
+borne1=int(input())
+borne2=int(input())
+distance=borne1-borne2
+if distance< 0:
+    print(-distance)
+else:
+    print(distance)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Tarifs dégressifs</h2>
+                            <p>Corrigé de l'exercice "Tarifs dégressifs":</p>
+                            <pre><code>
+heureArrivee=int(input())
+if heureArrivee==0:
+    print(10)
+elif heureArrivee>=9:
+    print(53)
+else:
+    print(10+5*heureArrivee)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Bagarre générale</h2>
+                            <p>Corrigé de l'exercice "Bagarre générale":</p>
+                            <pre><code>
+from math import* #pour importer la fonction valeur absolue pour les distances
+superficieArignon=int(input())
+superficieEvaran=int(input())
+if abs(superficieArignon-superficieEvaran)>10:
+    if superficieArignon>superficieEvaran:
+        print("La famille Arignon a un champ trop grand")
+    else:
+        print("La famille Evaran a un champ trop grand")
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Tarif du bateau</h2>
+                            <p>Corrigé de l'exercice "Tarif du bateau":</p>
+                            <pre><code>
+age=int(input())
+if age< 21:
+    print("Tarif réduit")
+else:
+    print("Tarif plein")
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Traversée du pont</h2>
+                            <p>Corrigé de l'exercice "Traversée du pont":</p>
+                            <pre><code>
+dé1=int(input())
+dé2=int(input())
+if dé1+dé2>=10:
+    print("Taxe spéciale !")
+    print(36)
+else: 
+    print("Taxe régulière")
+    print((dé1+dé2)*2)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Concours de tir à la corde</h2>
+                            <p>Corrigé de l'exercice "Concours de tir à la corde":</p>
+                            <pre><code>
+nbMembres =int(input())
+totalEquipe1=0
+totalEquipe2=0
+for i in range(nbMembres):
+    poids1=int(input())
+    poids2=int(input())
+    totalEquipe1+=poids1
+    totalEquipe2+=poids2
+if totalEquipe1< totalEquipe2:
+    print("L'équipe 2 a un avantage")
+else:
+    print("L'équipe 1 a un avantage")
+print("Poids total pour l'équipe 1 :",totalEquipe1)
+print("Poids total pour l'équipe 2 :", totalEquipe2)
+                            </code></pre>
+                        </section>
+                        <section class="exercise">
+                            <h2>Mot de passe du village</h2>
+                            <p>Corrigé de l'exercice "Mot de passe du village":</p>
+                            <pre><code>
+code=int(input())
+codeSecret=64741
+if code==codeSecret:
+    print("Bon festin !")
+else:
+    print("Allez-vous en !")
+                            </code></pre>
+                        </section>
