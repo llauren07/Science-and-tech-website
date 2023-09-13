@@ -163,4 +163,20 @@ for i in range(nbParticipants // 2):
     print("{} {}".format(nombres[i], nombres[nbParticipants - 1 - i]))
                             </code></pre>
                         </section>
+<section class="exercise">
+                            <h2>Banquet municipal</h2>
+                            <p>Corrigé de l'exercice "Banquet municipal":</p>
+                            <pre><code>
+nbPositions=int(input())
+nbChangements=int(input())
+positions=[0]*nbPositions
+for i in range(nbPositions):
+   positions[i]+=int(input())
+for i in range(nbChangements):
+   position1=int(input())
+   position2=int(input())
+   positions[position1], positions[position2] = positions[position2], positions[position1]
+for i in positions:
+   print(i)
+                            </code></pre>
                        
